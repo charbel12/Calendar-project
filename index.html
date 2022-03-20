@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <title>Atlas</title>
+</head>
+
+<body>
+
+    <center>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <a class="navbar-brand" href="#">ATLAS</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blogs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trip Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SignInPage.html">
+                            <img class="sign" src="https://cdn3.iconfinder.com/data/icons/login-6/512/LOGIN-10-512.png" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </center>
+
+
+
+    <!-- seach bar form -->
+    <div class="m-5 container-fluid">
+        <div class="row">
+            <div class="col-4 px-1 position-fixed" id="sticky-sidebar">
+                <form>
+                    <label class="form-label" for="form1">Search</label>
+                    <div class="input-group ">
+                        <div class="form-outline w-100 ">
+                            <input type="search" id="form1" class="form-control w-75" />
+                        </div>
+                    </div>
+
+                    <!-- search button -->
+                    <button type="submit" class="btn btn-secondary">
+                        Search
+                      </button>
+                </form>
+
+                <!-- display imgs -->
+                <img class="container-sm">
+                <img class="img-thumbnail" id="loadingImage" alt="Icecream"></img>
+                <section class="images"></section>
+
+            </div>
+
+        </div>
+
+        <div class="col-8">
+
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+
+</html>
